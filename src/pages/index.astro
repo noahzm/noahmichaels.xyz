@@ -1,11 +1,57 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<Layout
+  ><div class="flex items-center justify-center min-h-dvh">
+    <div class="m-4 prose">
+      <p>
+        Noah Michaels is a graphic designer based in Raleigh, North Carolina. He
+        is currently a print specialist for the North Carolina General Assembly.
+      </p>
+      <p><strong>Work Experience</strong></p>
+      <hr class="border-t border-dashed border-black -mt-4 mb-4" />
+      <p>
+        Print Specialist<br />
+        ↳ NCGA, Raleigh, 2021–Present
+      </p>
+      <p>
+        Webmaster &amp; Graphic Designer<br />
+        ↳ Creative Printing, Boone, 2018–2020
+      </p>
+      <p><strong>Education</strong></p>
+      <hr class="border-t border-dashed border-black -mt-4 mb-4" />
+      <p>
+        Graphic Arts &amp; Imaging Technology<br />
+        ↳ Appalachian State University, 2016–2020
+      </p>
+      <p><strong>Activities</strong></p>
+      <hr class="border-t border-dashed border-black -mt-4 mb-4" />
+      <p>
+        Web Development Teaching Assistant<br />
+        ↳ Appalachian State University, 2019–2020
+      </p>
+      <p>
+        The Peel Literature &amp; Arts Review<br />
+        ↳ Visual Committee, 2018–2020
+      </p>
+    </div>
+  </div></Layout
+>
+
+<style is:global>
+  @font-face {
+    font-family: "Cardone";
+    src: url("/fonts/Cardone-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cardone";
+    src: url("/fonts/Cardone-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>
