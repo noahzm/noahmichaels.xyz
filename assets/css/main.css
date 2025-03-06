@@ -1,0 +1,68 @@
+:root {
+  --pico-font-family: TimesNewRoman, "Times New Roman", Times, Baskerville,
+    Georgia, serif;
+  --pico-border-radius: 0;
+}
+
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --pico-background-color: white;
+  --pico-color: black;
+  --pico-h1-color: black;
+  --pico-h2-color: black;
+  --pico-h3-color: black;
+  --pico-h4-color: black;
+  --pico-h5-color: black;
+  --pico-h6-color: black;
+  --pico-primary: black;
+  --pico-primary-hover: white;
+  --pico-primary-underline: black;
+  --pico-text-selection-color: black;
+}
+::selection {
+  color: white;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --pico-background-color: black;
+    --pico-color: white;
+    --pico-h1-color: white;
+    --pico-h2-color: white;
+    --pico-h3-color: white;
+    --pico-h4-color: white;
+    --pico-h5-color: white;
+    --pico-h6-color: white;
+    --pico-primary: white;
+    --pico-primary-hover: black;
+    --pico-primary-underline: white;
+    --pico-text-selection-color: white;
+  }
+  ::selection {
+    color: black;
+  }
+}
+
+:where(a:not([role="button"])):is([aria-current]:not([aria-current="false"])),
+[role="link"]:is([aria-current]:not([aria-current="false"])) {
+  font-style: italic;
+  --pico-color: var(--pico-primary);
+}
+
+:where(a:not([role="button"])):is(
+    [aria-current]:not([aria-current="false"]),
+    :active
+  ),
+[role="link"]:is([aria-current]:not([aria-current="false"]), :active) {
+  --pico-color: var(--pico-primary);
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: var(--pico-primary);
+  color: var(--pico-primary-hover);
+}
+
+footer p {
+  text-align: right;
+}

@@ -1,0 +1,13 @@
+{{- $picoCSS := resources.Get "css/pico.min.css" }}
+{{- $mainCSS := resources.Get "css/main.css" }}
+
+{{- if eq hugo.Environment "development" }}
+  <link rel="stylesheet" href="{{ $picoCSS.RelPermalink }}">
+  <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}">
+{{- else }}
+  {{- $picoMinified := $picoCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $picoMinified.RelPermalink }}" integrity="{{ $picoMinified.Data.Integrity }}" crossorigin="anonymous">
+  
+  {{- $mainMinified := $mainCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $mainMinified.RelPermalink }}" integrity="{{ $mainMinified.Data.Integrity }}" crossorigin="anonymous">
+{{- end }}

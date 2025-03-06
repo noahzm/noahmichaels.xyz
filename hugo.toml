@@ -1,4 +1,21 @@
 baseURL = 'https://noahmichaels.xyz/'
 languageCode = 'en-us'
 title = 'Noah Michaels'
-theme = 'ananke'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Résumé'
+pageRef = '/résumé'
+weight = 20
+
+[[menus.main]]
+name = 'Contact'
+pageRef = '/contact'
+weight = 30
+
+[security]
+  enableInlineShortcodes = true
