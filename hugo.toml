@@ -19,3 +19,6 @@ weight = 30
 
 [security]
   enableInlineShortcodes = true
+
+[params]
+  description = "Noah Michaels is a graphic designer and print production specialist based in Raleigh, NC."
