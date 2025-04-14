@@ -1,45 +1,31 @@
 import type { IconMap, SocialLink, Site } from '@/types'
 
 export const SITE: Site = {
-  title: 'astro-erudite',
+  title: 'Noah Michaels',
   description:
-    'astro-erudite is a opinionated, unstyled blogging template—built with Astro, Tailwind, and shadcn/ui.',
-  href: 'https://astro-erudite.vercel.app',
-  featuredPostCount: 2,
-  postsPerPage: 3,
+    "Portfolio showcasing Noah Michaels's design expertise in branding, print, and digital media. Explore projects that demonstrate a commitment to clear communication and impactful visual solutions.",
+  href: 'https://noahmichaels.xyz',
 }
 
 export const NAV_LINKS: SocialLink[] = [
   {
-    href: '/blog',
-    label: 'blog',
-  },
-  {
-    href: '/authors',
-    label: 'authors',
-  },
-  {
-    href: '/about',
-    label: 'about',
+    href: '/resume',
+    label: 'resume',
   },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    href: 'https://github.com/jktrn',
+    href: 'https://github.com/noahzm',
     label: 'GitHub',
   },
   {
-    href: 'https://twitter.com/enscry',
-    label: 'Twitter',
+    href: 'https://www.linkedin.com/in/noahzm/',
+    label: 'LinkedIn',
   },
   {
-    href: 'mailto:jason@enscribe.dev',
+    href: 'mailto:me@noahmichaels.xyz',
     label: 'Email',
-  },
-  {
-    href: '/rss.xml',
-    label: 'RSS',
   },
 ]
 
