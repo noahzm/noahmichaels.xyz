@@ -1,25 +1,124 @@
 ---
-import Container from '@/components/Container.astro'
-import ProjectCard from '@/components/ProjectCard.astro'
-import { SITE } from '@/consts'
-import Layout from '@/layouts/Layout.astro'
-import { getCollection } from 'astro:content'
-
-const projects = await getCollection('projects')
+import Nav from "../components/Nav.astro";
+import Layout from "../layouts/Layout.astro";
+import { Separator } from "@/components/ui/separator";
+import { Picture } from "astro:assets";
+import phasezero from "../images/phase-zero.webp";
+import mtn from "../images/mtn.jpg";
+import boro from "../images/boro.png";
+import { BookOpenTextIcon, DiscIcon } from "@phosphor-icons/react";
 ---
 
-<Layout title="Home" description={SITE.description}>
-  <Container class="flex flex-col gap-y-6">
-    <section>
-      <div class="prose py-6">
-        <p>Hi, my name is Noah. This site is currently under development.</p>
+<Nav />
+<Layout>
+  <div class="md:p-4 px-4 pb-4 md:max-w-7/10">
+    <div class="flex flex-col md:flex-row">
+      <div class="md:basis-3/7 md:py-0 py-4 md:pr-4">
+        <Picture
+          src={phasezero}
+          alt="Phase Zero"
+          class="aspect-4/3 object-cover"
+          loading="eager"
+        />
       </div>
-    </section>
-    <section class="flex flex-col gap-y-4">
-      <h2 class="mb-4 text-2xl font-medium">Projects</h2>
-      <div class="flex flex-col gap-4">
-        {projects.map((project) => <ProjectCard project={project} />)}
+      <div class="md:basis-3/7 md:pr-4">
+        <p class="[&:not(:first-child)]:mt-4 text-2xl font-sans">Phase Zero</p>
+        <p class="[&:not(:first-child)]:my-4">
+          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis
+          mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim
+          laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et
+          semper nisl pellentesque est.
+        </p>
+        <a href="https://google.com" class="underline">Read more</a>
       </div>
-    </section>
-  </Container>
+      <div class="md:basis-1/7">
+        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">
+          2025
+        </p>
+        <BookOpenTextIcon size={32} weight="fill" />
+      </div>
+    </div>
+
+    <div class="py-4"><Separator /></div>
+
+    <div class="flex flex-col md:flex-row">
+      <div class="md:basis-3/7 md:py-0 py-4 md:pr-4">
+        <Picture
+          src={boro}
+          alt="Boro"
+          class="aspect-4/3 object-cover"
+          loading="eager"
+        />
+      </div>
+      <div class="md:basis-3/7 md:pr-4">
+        <p class="[&:not(:first-child)]:mt-4 text-2xl font-sans">Boro</p>
+        <p class="[&:not(:first-child)]:mt-4">
+          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis
+          mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim
+          laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et
+          semper nisl pellentesque est.
+        </p>
+        <p class="[&:not(:first-child)]:mt-4 underline">Read more</p>
+      </div>
+      <div class="md:basis-1/7">
+        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">
+          2023
+        </p>
+        <DiscIcon size={32} weight="fill" />
+      </div>
+    </div>
+
+    <div class="py-4"><Separator /></div>
+
+    <div class="flex flex-col md:flex-row">
+      <div class="md:basis-3/7 md:py-0 py-4 md:pr-4">
+        <Picture
+          src={mtn}
+          alt="Placeholder 1"
+          class="aspect-4/3 object-cover"
+          loading="eager"
+        />
+      </div>
+      <div class="md:basis-3/7 md:pr-4">
+        <p class="[&:not(:first-child)]:mt-4 text-2xl font-sans">Placeholder</p>
+        <p class="[&:not(:first-child)]:mt-4">
+          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis
+          mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim
+          laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et
+          semper nisl pellentesque est.
+        </p>
+        <p class="[&:not(:first-child)]:mt-4 underline">Read more</p>
+      </div>
+      <div class="md:basis-1/7">
+        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">
+          2025
+        </p>
+      </div>
+    </div>
+    <div class="py-4"><Separator /></div>
+    <div class="flex flex-col md:flex-row">
+      <div class="md:basis-3/7 md:py-0 py-4 md:pr-4">
+        <Picture
+          src={mtn}
+          alt="Placeholder 2"
+          class="aspect-4/3 object-cover"
+        />
+      </div>
+      <div class="md:basis-3/7 md:pr-4">
+        <p class="[&:not(:first-child)]:mt-4 text-2xl font-sans">Placeholder</p>
+        <p class="[&:not(:first-child)]:mt-4">
+          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis
+          mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim
+          laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et
+          semper nisl pellentesque est.
+        </p>
+        <p class="[&:not(:first-child)]:mt-4 underline">Read more</p>
+      </div>
+      <div class="md:basis-1/7">
+        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">
+          2025
+        </p>
+      </div>
+    </div>
+  </div>
 </Layout>
