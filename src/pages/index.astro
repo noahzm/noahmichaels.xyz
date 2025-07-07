@@ -1,17 +1,25 @@
 ---
+// Core layout components
 import Nav from "../components/Nav.astro";
 import Layout from "../layouts/Layout.astro";
+
+// UI components
 import { Separator } from "@/components/ui/separator";
 import { Picture } from "astro:assets";
+
+// Assets
 import phasezero from "../images/phase-zero.webp";
-import mtn from "../images/mtn.jpg";
 import boro from "../images/boro.png";
+import mtn from "../images/mtn.jpg";
+
+// Icons
 import { BookOpenTextIcon, DiscIcon } from "@phosphor-icons/react";
 ---
 
 <Nav />
 <Layout>
   <div class="md:p-4 px-4 pb-4 md:max-w-7/10">
+    {/** Phase Zero Section **/}
     <div class="flex flex-col md:flex-row">
       <div class="md:basis-3/7 md:py-0 py-4 md:pr-4">
         <Picture
@@ -24,23 +32,21 @@ import { BookOpenTextIcon, DiscIcon } from "@phosphor-icons/react";
       <div class="md:basis-3/7 md:pr-4">
         <p class="[&:not(:first-child)]:mt-4 text-2xl font-sans">Phase Zero</p>
         <p class="[&:not(:first-child)]:my-4">
-          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis
-          mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim
-          laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et
-          semper nisl pellentesque est.
+          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et semper nisl pellentesque est.
         </p>
         <a href="https://google.com" class="underline">Read more</a>
       </div>
       <div class="md:basis-1/7">
-        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">
-          2025
-        </p>
+        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">2025</p>
         <BookOpenTextIcon size={32} weight="fill" />
       </div>
     </div>
 
-    <div class="py-4"><Separator /></div>
+    <div class="py-4">
+      <Separator />
+    </div>
 
+    {/** Boro Section **/}
     <div class="flex flex-col md:flex-row">
       <div class="md:basis-3/7 md:py-0 py-4 md:pr-4">
         <Picture
@@ -53,23 +59,21 @@ import { BookOpenTextIcon, DiscIcon } from "@phosphor-icons/react";
       <div class="md:basis-3/7 md:pr-4">
         <p class="[&:not(:first-child)]:mt-4 text-2xl font-sans">Boro</p>
         <p class="[&:not(:first-child)]:mt-4">
-          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis
-          mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim
-          laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et
-          semper nisl pellentesque est.
+          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et semper nisl pellentesque est.
         </p>
         <p class="[&:not(:first-child)]:mt-4 underline">Read more</p>
       </div>
       <div class="md:basis-1/7">
-        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">
-          2023
-        </p>
+        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">2023</p>
         <DiscIcon size={32} weight="fill" />
       </div>
     </div>
 
-    <div class="py-4"><Separator /></div>
+    <div class="py-4">
+      <Separator />
+    </div>
 
+    {/** Placeholder Section 1 **/}
     <div class="flex flex-col md:flex-row">
       <div class="md:basis-3/7 md:py-0 py-4 md:pr-4">
         <Picture
@@ -82,20 +86,20 @@ import { BookOpenTextIcon, DiscIcon } from "@phosphor-icons/react";
       <div class="md:basis-3/7 md:pr-4">
         <p class="[&:not(:first-child)]:mt-4 text-2xl font-sans">Placeholder</p>
         <p class="[&:not(:first-child)]:mt-4">
-          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis
-          mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim
-          laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et
-          semper nisl pellentesque est.
+          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et semper nisl pellentesque est.
         </p>
         <p class="[&:not(:first-child)]:mt-4 underline">Read more</p>
       </div>
       <div class="md:basis-1/7">
-        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">
-          2025
-        </p>
+        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">2025</p>
       </div>
     </div>
-    <div class="py-4"><Separator /></div>
+
+    <div class="py-4">
+      <Separator />
+    </div>
+
+    {/** Placeholder Section 2 **/}
     <div class="flex flex-col md:flex-row">
       <div class="md:basis-3/7 md:py-0 py-4 md:pr-4">
         <Picture
@@ -107,17 +111,12 @@ import { BookOpenTextIcon, DiscIcon } from "@phosphor-icons/react";
       <div class="md:basis-3/7 md:pr-4">
         <p class="[&:not(:first-child)]:mt-4 text-2xl font-sans">Placeholder</p>
         <p class="[&:not(:first-child)]:mt-4">
-          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis
-          mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim
-          laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et
-          semper nisl pellentesque est.
+          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et semper nisl pellentesque est.
         </p>
         <p class="[&:not(:first-child)]:mt-4 underline">Read more</p>
       </div>
       <div class="md:basis-1/7">
-        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">
-          2025
-        </p>
+        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">2025</p>
       </div>
     </div>
   </div>
