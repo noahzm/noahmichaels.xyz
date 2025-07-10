@@ -1,15 +1,17 @@
 ---
 import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" transition:name="root" transition:animate="fade">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="generator" content={Astro.generator} />
     <title>Noah Michaels</title>
+    <ClientRouter />
   </head>
   <body class="bg-background min-h-screen text-sm">
     <slot />
