@@ -8,26 +8,55 @@ import { DiscIcon } from "@phosphor-icons/react";
 
 <Nav />
 <Layout>
-  <div class="md:p-4 px-4 pb-4 md:max-w-7/10">
-    <div class="flex flex-col md:flex-row">
-      <div class="md:basis-3/7 md:py-0 py-4 md:pr-4">
+  <div class="md:p-4 px-4 pb-8 md:max-w-7/10 mr-auto">
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="md:basis-3/7">
         <Picture
           src={boro}
           alt="Boro"
-          class="aspect-4/3 object-cover"
+          class="aspect-4/3 object-cover border border-black"
           loading="eager"
         />
       </div>
-      <div class="md:basis-3/7 md:pr-4">
-        <p class="[&:not(:first-child)]:mt-4 text-2xl font-sans">Boro</p>
-        <p class="mt-4">
-          Designed merchandise and album artwork for Boro, a rap group based in Greensboro, NC. Work supported their visual identity and helped promote their music and brand. Projects included t-shirt designs, album covers, and event flyers.
-        </p>
-      </div>
-      <div class="md:basis-1/7">
-        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">2023</p>
-        <DiscIcon size={32} weight="fill" />
+      <div class="md:basis-4/7 flex flex-col justify-between">
+        <div>
+          <h1 class="text-2xl font-sans font-normal mb-2 flex items-center justify-between w-full">
+            <span>Boro</span>
+            <DiscIcon size={32} weight="fill" className="text-primary" />
+          </h1>
+          <p class="text-muted-foreground text-sm mb-4 uppercase font-sans tracking-wide">2023 &mdash; Merchandise & Album Artwork</p>
+          <p class="mb-4 text-sm">
+            Designed merchandise and album artwork for Boro, a rap group based in Greensboro, NC. Work supported their visual identity and helped promote their music and brand. Projects included t-shirt designs, album covers, and event flyers.
+          </p>
+          <ul class="list-disc pl-5 mb-4 text-sm">
+            <li>Role: Designer</li>
+            <li>Medium: Print (t-shirts, album covers, flyers)</li>
+            <li>Client: Boro</li>
+          </ul>
+          <p class="mb-4 text-sm">
+            Highlights: Collaborative process, original artwork, and supporting the growth of a local music group.
+          </p>
+        </div>
       </div>
     </div>
+    
+    {/* Image Gallery Section */}
+    <section class="mb-4">
+      <h2 class="text-2xl font-sans font-normal mb-4 mt-10">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted">
+          <span class="text-muted-foreground text-sm">[ T-Shirt Design ]</span>
+        </div>
+        <div class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted">
+          <span class="text-muted-foreground text-sm">[ Album Cover ]</span>
+        </div>
+        <div class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted">
+          <span class="text-muted-foreground text-sm">[ Flyer Example ]</span>
+        </div>
+        <div class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted">
+          <span class="text-muted-foreground text-sm">[ Event Poster ]</span>
+        </div>
+      </div>
+    </section>
   </div>
 </Layout>

@@ -16,32 +16,63 @@ import { BookOpenTextIcon } from "@phosphor-icons/react";
 
 <Nav />
 <Layout>
-  <div class="md:p-4 px-4 pb-4 md:max-w-7/10">
-    <div class="flex flex-col md:flex-row">
-      <div class="md:basis-3/7 md:py-0 py-4 md:pr-4">
+  <div class="md:p-4 px-4 pb-8 md:max-w-7/10 mr-auto">
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="md:basis-3/7">
         <Picture
           src={phasezero}
-          alt="Phase Zero"
-          class="aspect-4/3 object-cover"
+          alt="Phase Zero publication cover"
+          class="aspect-4/3 object-cover border border-black"
           loading="eager"
         />
       </div>
-      <div class="md:basis-3/7 md:pr-4">
-        <p class="[&:not(:first-child)]:mt-4 text-2xl font-sans">Phase Zero</p>
-        <p class="[&:not(:first-child)]:my-4">
-          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et semper nisl pellentesque est.
-        </p>
-        <p class="[&:not(:first-child)]:mt-4">
-          More details about the Phase Zero project can go here. Add images, credits, or any other relevant information.
-        </p>
-      </div>
-      <div class="md:basis-1/7">
-        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">2025</p>
-        <BookOpenTextIcon size={32} weight="fill" />
+      <div class="md:basis-4/7 flex flex-col justify-between">
+        <div>
+          <h1 class="text-2xl font-sans font-normal mb-2 flex items-center justify-between w-full">
+            <span>Phase Zero</span>
+            <BookOpenTextIcon size={32} weight="fill" className="text-primary" />
+          </h1>
+          <p class="text-muted-foreground text-sm mb-4 uppercase font-sans tracking-wide">2025 &mdash; Print Publication</p>
+          <p class="mb-4 text-sm">
+            <span class="block mb-1">Phase Zero Issue 9 is an issue of the <span class="italic">Phase Zero</span> zine, a print publication archiving the rapidly evolving culture and visual language of New York City. This issue features illustrations, poetry, photography, creative writing, and more, capturing the creative pulse of the city in 2025.</span>
+            <br />
+            <span class="block text-xs text-muted-foreground italic">Issue 9 has not yet been released.</span>
+          </p>
+          <ul class="list-disc pl-5 mb-4 text-sm">
+            <li>Role: Contributor (illustration, writing, photography)</li>
+            <li>Medium: Print, 120 pages, full color</li>
+            <li>Publisher: Phase Zero Collective</li>
+          </ul>
+          <p class="mb-4 text-sm">
+            Highlights: Collaborative editorial process, original artwork, and a focus on emerging voices in NYC's creative scene.
+          </p>
+        </div>
+        <div class="mt-6">
+          <a href="https://phasezeronyc.com" target="_blank" rel="noopener noreferrer" class="inline-block px-5 py-2 bg-black text-white hover:bg-neutral-800 focus:bg-neutral-900 transition rounded-none">View Publication</a>
+        </div>
       </div>
     </div>
-    <div class="py-4">
+    <div class="py-8">
       <Separator />
     </div>
+
+    {/* Image Gallery Section */}
+    <section class="mb-4">
+      <h2 class="text-2xl font-sans font-normal mb-4">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted">
+          <span class="text-muted-foreground text-sm">[ Placeholder Image 1 ]</span>
+        </div>
+        <div class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted">
+          <span class="text-muted-foreground text-sm">[ Placeholder Image 2 ]</span>
+        </div>
+        <div class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted">
+          <span class="text-muted-foreground text-sm">[ Placeholder Image 3 ]</span>
+        </div>
+        <div class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted">
+          <span class="text-muted-foreground text-sm">[ Placeholder Image 4 ]</span>
+        </div>
+      </div>
+    </section>
   </div>
 </Layout>

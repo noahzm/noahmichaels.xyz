@@ -3,9 +3,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Custom dark variant for utility classes */
-@custom-variant dark (&:is(.dark *));
-
 /* Cardone custom font faces */
 @font-face {
   font-family: "Cardone";
@@ -36,13 +33,13 @@
   font-display: swap;
 }
 
-/* Theme font and color variables */
-@theme {
-  --font-serif: "Cardone", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-sans: "Helvetica Neue", Helvetica, Arial, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
+/* Import Inter Tight font from fontsource */
+@import "@fontsource/inter-tight/index.css";
 
-@theme inline {
+/* Theme font and color variables (standard CSS custom properties) */
+:root {
+  --font-serif: "Cardone", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: "Inter Tight", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -154,11 +151,10 @@
 }
 
 /* Base layer styles */
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground font-serif;
-  }
+/* Base layer styles (using Tailwind utility classes in your markup, not here) */
+/* If you want to set base styles, use plain CSS or Tailwind's global styles. */
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-serif);
 }
