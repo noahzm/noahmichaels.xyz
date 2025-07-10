@@ -1,0 +1,47 @@
+---
+// Core layout components
+import Nav from "../components/Nav.astro";
+import Layout from "../layouts/Layout.astro";
+
+// UI components
+import { Separator } from "@/components/ui/separator";
+import { Picture } from "astro:assets";
+
+// Assets
+import phasezero from "../images/phase-zero.webp";
+
+// Icons
+import { BookOpenTextIcon } from "@phosphor-icons/react";
+---
+
+<Nav />
+<Layout>
+  <div class="md:p-4 px-4 pb-4 md:max-w-7/10">
+    <div class="flex flex-col md:flex-row">
+      <div class="md:basis-3/7 md:py-0 py-4 md:pr-4">
+        <Picture
+          src={phasezero}
+          alt="Phase Zero"
+          class="aspect-4/3 object-cover"
+          loading="eager"
+        />
+      </div>
+      <div class="md:basis-3/7 md:pr-4">
+        <p class="[&:not(:first-child)]:mt-4 text-2xl font-sans">Phase Zero</p>
+        <p class="[&:not(:first-child)]:my-4">
+          Etiam euismod elit id nisl lacinia commodo. Donec non neque quis mauris malesuada ultricies. Sed posuere sem velit, nec vestibulum enim laoreet a. Duis imperdiet egestas pulvinar, In gravida turpis arcu, et semper nisl pellentesque est.
+        </p>
+        <p class="[&:not(:first-child)]:mt-4">
+          More details about the Phase Zero project can go here. Add images, credits, or any other relevant information.
+        </p>
+      </div>
+      <div class="md:basis-1/7">
+        <p class="[&:not(:first-child)]:mt-4 mt-4 md:mt-0 uppercase font-sans">2025</p>
+        <BookOpenTextIcon size={32} weight="fill" />
+      </div>
+    </div>
+    <div class="py-4">
+      <Separator />
+    </div>
+  </div>
+</Layout>
