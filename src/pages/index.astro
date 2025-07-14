@@ -9,11 +9,10 @@ import { Picture } from "astro:assets";
 
 // Assets
 import phasezero from "../images/phase-zero.webp";
-import boro from "../images/boro.png";
 import ncga from "../images/ncga.jpg";
 
 // Icons
-import { BookOpenTextIcon, DiscIcon, MegaphoneSimpleIcon } from "@phosphor-icons/react";
+import { BookOpenTextIcon, MegaphoneSimpleIcon } from "@phosphor-icons/react";
 ---
 
 <Nav />
@@ -68,35 +67,6 @@ import { BookOpenTextIcon, DiscIcon, MegaphoneSimpleIcon } from "@phosphor-icons
             <div class="flex flex-col items-end text-right ml-4">
               <MegaphoneSimpleIcon size={32} weight="fill" />
               <p class="mt-1 uppercase font-sans">2024</p>
-            </div>
-          </div>
-      </div>
-    </div>
-
-    <div class="py-2">
-      <Separator />
-    </div>
-
-    {/** Boro Section (2023) **/}
-    <div class="flex flex-col md:flex-row gap-4">
-      <div class="md:basis-3/7">
-        <Picture
-          src={boro}
-          alt="Boro"
-          class="aspect-[4/3] object-cover border border-black"
-          loading="eager"
-        />
-      </div>
-      <div class="md:basis-4/7 flex flex-col justify-between">
-          <div class="flex flex-row justify-between items-start w-full">
-            <div class="flex-1">
-              <p class="text-2xl font-sans">Boro</p>
-              <p class="mt-4">Designed merchandise and album artwork for Boro, a rap group based in Greensboro, NC. Work supported their visual identity and helped promote their music and brand.</p>
-              <a href="/boro" class="mt-4 inline-block underline hover:no-underline focus:no-underline">Read more</a>
-            </div>
-            <div class="flex flex-col items-end text-right ml-4">
-              <DiscIcon size={32} weight="fill" />
-              <p class="mt-1 uppercase font-sans">2023</p>
             </div>
           </div>
       </div>
