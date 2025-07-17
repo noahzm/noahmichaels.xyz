@@ -7,37 +7,56 @@ import { MegaphoneSimpleIcon } from "@phosphor-icons/react";
 ---
 
 <Nav />
-<Layout title="NCGA – Noah Michaels" description="Promotional print design for the North Carolina General Assembly's career fairs. Designed by Noah Michaels.">
+<Layout
+  title="NCGA – Noah Michaels"
+  description="Promotional print design for the North Carolina General Assembly's career fairs. Designed by Noah Michaels."
+>
   <div class="md:p-4 px-4 pb-8 md:max-w-7/10 mr-auto">
     <div class="flex flex-col md:flex-row gap-4">
       <div class="md:basis-3/7">
         <Picture
           src={ncga}
           alt="North Carolina General Assembly"
-          class="aspect-4/3 object-cover border border-black"
+          class="aspect-[4/3] object-cover border border-black"
           loading="eager"
+          width="800"
+          height="600"
+          layout="constrained"
         />
       </div>
       <div class="md:basis-4/7 flex flex-col justify-between">
         <div>
-          <h1 class="text-2xl font-sans font-normal mb-2 flex items-center justify-between w-full">
+          <h1
+            class="text-2xl font-sans font-normal mb-2 flex items-center justify-between w-full"
+          >
             <span>North Carolina General Assembly</span>
-            <MegaphoneSimpleIcon size={32} weight="fill" className="text-primary" />
+            <MegaphoneSimpleIcon
+              size={32}
+              weight="fill"
+              className="text-primary"
+            />
           </h1>
-          <p class="text-muted-foreground text-sm mb-4 uppercase font-sans tracking-wide">2025 &mdash; Promotional Design</p>
-          <p class="mb-4 text-sm">
-            Designed promotional materials for the North Carolina General Assembly, supporting their career fairs at colleges and universities across the state. Materials included tablecloths, large banners, and flyers to engage students and promote public service careers.
+          <p
+            class="mb-4 uppercase font-sans tracking-wide"
+          >
+            2025 &mdash; Promotional Design
           </p>
-          <ul class="list-disc pl-5 mb-4 text-sm">
+          <p class="mb-4">
+            Designed promotional materials for the North Carolina General
+            Assembly, supporting their career fairs at colleges and universities
+            across the state. Materials included tablecloths, large banners, and
+            flyers to engage students and promote public service careers.
+          </p>
+          <ul class="list-disc pl-5 mb-4">
             <li>Role: Designer</li>
             <li>Medium: Print (tablecloths, large banners, flyers)</li>
             <li>Client: North Carolina General Assembly</li>
           </ul>
-          <p class="mb-4 text-sm">
-            Highlights: Statewide impact, accessible design, and collaboration with NCGA human resources staff.
+          <p class="mb-4">
+            Highlights: Statewide impact, accessible design, and collaboration
+            with NCGA human resources staff.
           </p>
         </div>
-        
       </div>
     </div>
 
@@ -45,17 +64,25 @@ import { MegaphoneSimpleIcon } from "@phosphor-icons/react";
     <section class="mb-4">
       <h2 class="text-2xl font-sans font-normal mb-4 mt-10">Gallery</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted">
-          <span class="text-muted-foreground text-sm">[ Poster Example ]</span>
+        <div
+          class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
+        >
+          <span>[ Poster Example ]</span>
         </div>
-        <div class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted">
-          <span class="text-muted-foreground text-sm">[ Flyer Example ]</span>
+        <div
+          class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
+        >
+          <span>[ Flyer Example ]</span>
         </div>
-        <div class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted">
-          <span class="text-muted-foreground text-sm">[ Digital Graphic ]</span>
+        <div
+          class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
+        >
+          <span>[ Digital Graphic ]</span>
         </div>
-        <div class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted">
-          <span class="text-muted-foreground text-sm">[ Social Media Asset ]</span>
+        <div
+          class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
+        >
+          <span>[ Social Media Asset ]</span>
         </div>
       </div>
     </section>
