@@ -1,17 +1,12 @@
 ---
 // Core layout components
-import Nav from "../components/Nav.astro";
 import Layout from "../layouts/Layout.astro";
 
 // UI components
-import { Separator } from "@/components/ui/separator";
 import { Picture } from "astro:assets";
 
 // Assets
 import phasezero from "../images/phase-zero.webp";
-
-// Icons
-import { BookOpenTextIcon } from "@phosphor-icons/react";
 ---
 
 <Layout
@@ -34,28 +29,32 @@ import { BookOpenTextIcon } from "@phosphor-icons/react";
       <div class="md:basis-4/7 flex flex-col justify-between">
         <div>
           <h1
-            class="text-2xl font-sans font-normal mb-2 flex items-center justify-between w-full"
+            class="text-2xl font-sans font-normal mb-2 flex justify-between w-full"
           >
             <span>Phase Zero</span>
-            <BookOpenTextIcon
-              size={32}
-              weight="fill"
-              className="text-primary"
-            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#000"
+              ><path
+                d="M270-80q-45 0-77.5-29.83Q160-139.67 160-184v-562q0-37.33 22.5-66.33t59.17-37l385-78.67v626.67l-366.34 76.66q-14.33 3.34-24 14.84-9.66 11.5-9.66 25.83 0 16.33 13 26.83t30.33 10.5h463.33V-800H800v720H270Zm10-215.67 66.67-14V-803L280-789v493.33Z"
+              ></path></svg
+            >
           </h1>
           <p class="mb-4 uppercase font-sans tracking-wide">
             2025 &mdash; Print Publication
           </p>
           <p class="mb-4">
-            <span class="block"
+            <span class="block mb-4"
               >Phase Zero Issue 9 is an issue of the <span class="italic"
                 >Phase Zero</span
               > zine, a print publication archiving the rapidly evolving culture
               and visual language of New York City. This issue features illustrations,
               poetry, photography, creative writing, and more, capturing the creative
-              pulse of the city in 2025.</span
+              pulse of the city.</span
             >
-            <br />
             <span class="block italic">Issue 9 has not yet been released.</span>
           </p>
           <ul class="list-disc pl-5 mb-4">
@@ -73,19 +72,17 @@ import { BookOpenTextIcon } from "@phosphor-icons/react";
             href="https://phasezeronyc.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-block px-5 py-2 bg-black text-white hover:bg-neutral-800 focus:bg-neutral-900 transition rounded-none"
+            class="inline-block px-5 py-2 border text-black transition-colors hover:bg-black hover:text-geen"
             >View Publication</a
           >
         </div>
       </div>
     </div>
-    <div class="py-8">
-      <Separator />
-    </div>
+    <div class="py-8"></div>
 
     {/* Image Gallery Section */}
     <section class="mb-4">
-      <h2 class="text-2xl font-sans font-normal mb-4">Gallery</h2>
+      <h2 class="text-2xl font-sans mb-4">Gallery</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div
           class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"

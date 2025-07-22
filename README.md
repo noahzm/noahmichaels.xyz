@@ -1,14 +1,12 @@
 # Noah Michaels Portfolio
 
-✍️ My personal portfolio—built with [Astro](https://astro.build/), [Tailwind CSS](https://tailwindcss.com/), and [shadcn/ui](https://ui.shadcn.com/).
+✍️ My personal portfolio—built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Features
 
 - ⚡️ Fast, modern static site powered by Astro
-- 🎨 Custom UI components with shadcn/ui
-- 💅 Responsive design with Tailwind CSS
+- 🎨 Responsive design with Tailwind CSS
 - 🖼️ Optimized images and assets
-- ⚛️ React support for interactive components
 
 ## Getting Started
 

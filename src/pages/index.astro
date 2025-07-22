@@ -1,18 +1,10 @@
 ---
-// Core layout components
-import Nav from "../components/Nav.astro";
 import Layout from "../layouts/Layout.astro";
 
-// UI components
-import { Separator } from "@/components/ui/separator";
 import { Picture } from "astro:assets";
 
-// Assets
 import phasezero from "../images/phase-zero.webp";
 import ncga from "../images/ncga.jpg";
-
-// Icons
-import { BookOpenTextIcon, MegaphoneSimpleIcon } from "@phosphor-icons/react";
 ---
 
 <Layout
@@ -50,16 +42,23 @@ import { BookOpenTextIcon, MegaphoneSimpleIcon } from "@phosphor-icons/react";
             >
           </div>
           <div class="flex flex-col items-end text-right ml-4">
-            <BookOpenTextIcon size={32} weight="fill" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#000"
+              ><path
+                d="M270-80q-45 0-77.5-29.83Q160-139.67 160-184v-562q0-37.33 22.5-66.33t59.17-37l385-78.67v626.67l-366.34 76.66q-14.33 3.34-24 14.84-9.66 11.5-9.66 25.83 0 16.33 13 26.83t30.33 10.5h463.33V-800H800v720H270Zm10-215.67 66.67-14V-803L280-789v493.33Z"
+              ></path></svg
+            >
             <p class="mt-1 uppercase font-sans">2025</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="py-2">
-      <Separator />
-    </div>
+    <div class="py-2"></div>
 
     {/** North Carolina General Assembly Section (2024) **/}
     <div class="flex flex-col md:flex-row gap-4">
@@ -90,7 +89,16 @@ import { BookOpenTextIcon, MegaphoneSimpleIcon } from "@phosphor-icons/react";
             >
           </div>
           <div class="flex flex-col items-end text-right ml-4">
-            <MegaphoneSimpleIcon size={32} weight="fill" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#000"
+              ><path
+                d="M726.67-446.67v-66.66H880v66.66H726.67ZM776-160l-123.33-92 40-53.33 123.33 92L776-160Zm-81.33-495.33-40-53.34L776-800l40 53.33-121.33 91.34ZM206.67-200v-160H80v-240h240l200-120v480L320-360h-46.67v160h-66.66ZM560-346v-268q27 24 43.5 58.5T620-480q0 41-16.5 75.5T560-346Z"
+              ></path></svg
+            >
             <p class="mt-1 uppercase font-sans">2024</p>
           </div>
         </div>
