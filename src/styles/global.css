@@ -1,44 +1,13 @@
 @import "tailwindcss";
-@import "@fontsource-variable/inter-tight";
-
-/* Cardone custom font faces */
-@font-face {
-  font-family: "Cardone";
-  src: url("/fonts/Cardone-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Cardone";
-  src: url("/fonts/Cardone-RegularItalic.woff2") format("woff2");
-  font-weight: normal;
-  font-style: oblique;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Cardone";
-  src: url("/fonts/Cardone-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Cardone";
-  src: url("/fonts/Cardone-BoldItalic.woff2") format("woff2");
-  font-weight: bold;
-  font-style: oblique;
-  font-display: swap;
-}
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/besley";
+@import "@fontsource-variable/besley/wght-italic.css";
 
 @theme {
   --default-font-family: var(--font-serif);
-  --font-sans: "Inter Tight Variable", ui-sans-serif, system-ui, sans-serif,
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-serif: "Cardone", ui-serif, Georgia, Cambria, "Times New Roman", Times,
-    serif;
-  --color-geen: #f6f8e4;
+  --font-serif: "Besley Variable", ui-serif, Georgia, Cambria, "Times New Roman",
+    Times, serif;
+  --color-geen: oklch(0.9882 0.037 116.91);
 }
