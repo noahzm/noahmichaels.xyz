@@ -1,19 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Picture } from "astro:assets";
-import ncga from "../images/ncga.jpg";
+import influence from "../images/influence.jpg";
 ---
 
 <Layout
-  title="NCGA – Noah Michaels"
-  description="Promotional print design for the North Carolina General Assembly's career fairs. Designed by Noah Michaels."
+  title="Influence – Noah Michaels"
+  description="A small photo book about films that have inspired me. School project by Noah Michaels."
 >
   <div class="md:p-4 px-4 pb-8 md:max-w-7/10 mr-auto">
     <div class="flex flex-col md:flex-row gap-4">
       <div class="md:basis-3/7">
         <Picture
-          src={ncga}
-          alt="North Carolina General Assembly"
+          src={influence}
+          alt="Phase Zero publication cover"
           class="aspect-[4/3] object-cover border border-black"
           loading="eager"
           width="800"
@@ -26,7 +26,7 @@ import ncga from "../images/ncga.jpg";
           <h1
             class="text-2xl font-sans font-normal mb-2 flex justify-between w-full"
           >
-            <span>North Carolina General Assembly</span>
+            <span>Influence</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="40px"
@@ -34,32 +34,33 @@ import ncga from "../images/ncga.jpg";
               width="40px"
               fill="#000"
               ><path
-                d="M726.67-446.67v-66.66H880v66.66H726.67ZM776-160l-123.33-92 40-53.33 123.33 92L776-160Zm-81.33-495.33-40-53.34L776-800l40 53.33-121.33 91.34ZM206.67-200v-160H80v-240h240l200-120v480L320-360h-46.67v160h-66.66ZM560-346v-268q27 24 43.5 58.5T620-480q0 41-16.5 75.5T560-346Z"
+                d="M160-80v-800h640v800H160Zm120-160h400L545-420 440-280l-65-87-95 127Zm160-280 100-60 100 60v-280H440v280Z"
               ></path></svg
             >
           </h1>
           <p class="mb-4 uppercase font-sans tracking-wide">
-            2024 &mdash; Promotional Design
+            2019 &mdash; Coffee Table Book
           </p>
           <p class="mb-4">
-            Designed promotional materials for the North Carolina General
-            Assembly, supporting their career fairs at colleges and universities
-            across the state. Materials included tablecloths, large banners, and
-            flyers to engage students and promote public service careers.
+            <span class="block"
+              >Influence is a small coffee table book featuring stills from
+              films that have inspired me as a visual artist and storyteller.
+              Each spread pairs a film still with a personal reflection,
+              exploring how each work has shaped my creative perspective.</span
+            >
           </p>
           <ul class="list-disc pl-5 mb-4">
-            <li>Role: Designer</li>
-            <li>Medium: Print (tablecloths, large banners, flyers)</li>
-            <li>Client: North Carolina General Assembly</li>
+            <li>Role: Curator, Designer, Writer</li>
+            <li>Medium: Print (coffee table book)</li>
+            <li>School Project</li>
           </ul>
           <p class="mb-4">
-            Highlights: Statewide impact, accessible design, and collaboration
-            with NCGA human resources staff.
+            Highlights: Film stills, personal reflections, and cinematic
+            inspiration.
           </p>
         </div>
       </div>
     </div>
-
     {/* Image Gallery Section */}
     <section class="mb-4">
       <h2 class="text-2xl font-sans font-normal mb-4 mt-10">Gallery</h2>
@@ -67,22 +68,22 @@ import ncga from "../images/ncga.jpg";
         <div
           class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
         >
-          <span>[ Poster Example ]</span>
+          <span>[ Photo: Inspired by Tarkovsky ]</span>
         </div>
         <div
           class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
         >
-          <span>[ Flyer Example ]</span>
+          <span>[ Photo: Inspired by Wong Kar-wai ]</span>
         </div>
         <div
           class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
         >
-          <span>[ Digital Graphic ]</span>
+          <span>[ Photo: Inspired by Agnès Varda ]</span>
         </div>
         <div
           class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
         >
-          <span>[ Social Media Asset ]</span>
+          <span>[ Photo: Inspired by Barry Jenkins ]</span>
         </div>
       </div>
     </section>

@@ -9,5 +9,5 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-serif: "Besley Variable", ui-serif, Georgia, Cambria, "Times New Roman",
     Times, serif;
-  --color-geen: oklch(0.9882 0.037 116.91);
+  --color-geen: oklch(0.98 0.04 117);
 }
