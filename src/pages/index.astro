@@ -5,6 +5,7 @@ import { Picture } from "astro:assets";
 
 import phasezero from "../images/phase-zero.webp";
 import influence from "../images/influence.jpg";
+import grouch from "../images/grouch.jpg";
 ---
 
 <Layout
@@ -58,6 +59,53 @@ import influence from "../images/influence.jpg";
       </div>
     </div>
 
+    <div class="py-2"></div>
+
+    {/** Grouch Section (2022) **/}
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="md:basis-3/7">
+        <Picture
+          src={grouch}
+          alt="Grouch"
+          class="aspect-[4/3] object-cover border border-black"
+          loading="eager"
+          width="800"
+          height="600"
+          layout="constrained"
+        />
+      </div>
+      <div class="md:basis-4/7 flex flex-col justify-between">
+        <div class="flex flex-row justify-between items-start w-full">
+          <div class="flex-1">
+            <p class="text-2xl font-sans">Grouch</p>
+            <p class="mt-4">
+              Grouch is a personal project focused on designing and screen
+              printing a small run of t-shirts. The project involved creating
+              original graphics, preparing screens, and printing each shirt by
+              hand in a studio setting.
+            </p>
+            <a
+              href="/grouch"
+              class="mt-4 inline-block underline hover:no-underline focus:no-underline"
+              >Read more about Grouch</a
+            >
+          </div>
+          <div class="flex flex-col items-end text-right ml-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="000"
+              ><path
+                d="m246.67-553.33-89 49.66L50-690.33 308-840h88.67v39.33q0 36.34 23.83 60.17t60.17 23.83q36.33 0 59.83-23.83t23.5-60.17V-840h88.67l258 149.67-110 188.66-89.34-52.66V-120H246.67v-433.33Z"
+              ></path></svg
+            >
+            <p class="mt-1 uppercase font-sans">2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="py-2"></div>
 
     {/** Influence Photo Book Section (2019) **/}

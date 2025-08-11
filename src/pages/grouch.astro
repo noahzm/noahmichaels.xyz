@@ -1,0 +1,91 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Picture } from "astro:assets";
+import grouch from "../images/grouch.jpg";
+---
+
+<Layout
+  title="Grouch – Noah Michaels"
+  description="A screen printing clothing project. School project by Noah Michaels."
+>
+  <div class="md:p-4 px-4 pb-8 md:max-w-7/10 mr-auto">
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="md:basis-3/7">
+        <Picture
+          src={grouch}
+          alt="Grouch t-shirt"
+          class="aspect-[4/3] object-cover border border-black"
+          loading="eager"
+          width="800"
+          height="600"
+          layout="constrained"
+        />
+      </div>
+      <div class="md:basis-4/7 flex flex-col justify-between">
+        <div>
+          <h1
+            class="text-2xl font-sans font-normal mb-2 flex justify-between w-full"
+          >
+            <span>Grouch</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="000"
+              ><path
+                d="m246.67-553.33-89 49.66L50-690.33 308-840h88.67v39.33q0 36.34 23.83 60.17t60.17 23.83q36.33 0 59.83-23.83t23.5-60.17V-840h88.67l258 149.67-110 188.66-89.34-52.66V-120H246.67v-433.33Z"
+              ></path></svg
+            >
+          </h1>
+          <p class="mb-4 uppercase font-sans tracking-wide">
+            2022 &mdash; Screen Printing Clothing Project
+          </p>
+          <p class="mb-4">
+            <span class="block"
+              >Grouch was a school project focused on designing and screen
+              printing a small run of t-shirts. The project involved creating
+              original graphics, preparing screens, and printing each shirt by
+              hand in a studio setting.</span
+            >
+          </p>
+          <ul class="list-disc pl-5 mb-4">
+            <li>Role: Designer, Screen Printer</li>
+            <li>Medium: Apparel (screen printed t-shirts)</li>
+            <li>Personal Project</li>
+          </ul>
+          <p class="mb-4">
+            Highlights: Hands-on screen printing, original graphics, and small
+            batch production.
+          </p>
+        </div>
+      </div>
+    </div>
+    {/* Image Gallery Section */}
+    <section class="mb-4">
+      <h2 class="text-2xl font-sans font-normal mb-4 mt-10">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div
+          class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
+        >
+          <span>[ Grouch T-shirt Front ]</span>
+        </div>
+        <div
+          class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
+        >
+          <span>[ Grouch T-shirt Back ]</span>
+        </div>
+        <div
+          class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
+        >
+          <span>[ Screen Printing Process ]</span>
+        </div>
+        <div
+          class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
+        >
+          <span>[ Finished Shirts Stack ]</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
