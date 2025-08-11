@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { Picture } from "astro:assets";
 import influence from "../images/influence.jpg";
+import spread from "../images/influence/spread1.jpg";
 ---
 
 <Layout
@@ -13,7 +14,7 @@ import influence from "../images/influence.jpg";
       <div class="md:basis-3/7">
         <Picture
           src={influence}
-          alt="Phase Zero publication cover"
+          alt="Influence cover"
           class="aspect-[4/3] object-cover border border-black"
           loading="eager"
           width="800"
@@ -63,28 +64,16 @@ import influence from "../images/influence.jpg";
     </div>
     {/* Image Gallery Section */}
     <section class="mb-4">
-      <h2 class="text-2xl font-sans font-normal mb-4 mt-10">Gallery</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div
-          class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
-        >
-          <span>[ Photo: Inspired by Tarkovsky ]</span>
-        </div>
-        <div
-          class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
-        >
-          <span>[ Photo: Inspired by Wong Kar-wai ]</span>
-        </div>
-        <div
-          class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
-        >
-          <span>[ Photo: Inspired by Agnès Varda ]</span>
-        </div>
-        <div
-          class="overflow-hidden border border-black aspect-[4/3] flex items-center justify-center bg-muted"
-        >
-          <span>[ Photo: Inspired by Barry Jenkins ]</span>
-        </div>
+        <Picture
+          src={spread}
+          alt="Influence spread"
+          class="aspect-[4/3] object-cover border border-black"
+          loading="eager"
+          width="800"
+          height="600"
+          layout="constrained"
+        />
       </div>
     </section>
   </div>
