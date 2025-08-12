@@ -1,13 +1,12 @@
 @import "tailwindcss";
-@import "@fontsource-variable/geist";
+@import "@fontsource-variable/archivo";
 @import "@fontsource-variable/besley";
 @import "@fontsource-variable/besley/wght-italic.css";
 
 @theme {
   --default-font-family: var(--font-serif);
-  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif,
+  --font-sans: "Archivo Variable", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-serif: "Besley Variable", ui-serif, Georgia, Cambria, "Times New Roman",
     Times, serif;
-  --color-geen: oklch(0.98 0.04 117);
 }
