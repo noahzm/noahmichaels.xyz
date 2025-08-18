@@ -25,22 +25,15 @@ import spread from "../images/influence/spread1.jpg";
       <div class="md:basis-4/7 flex flex-col justify-between">
         <div>
           <h1
-            class="text-2xl font-sans font-normal mb-2 flex justify-between w-full"
+            class="text-4xl font-sans font-extralight mb-2 flex justify-between w-full"
           >
-            <span>Influence</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="40px"
-              viewBox="0 -960 960 960"
-              width="40px"
-              fill="#000"
-              ><path
-                d="M160-80v-800h640v800H160Zm120-160h400L545-420 440-280l-65-87-95 127Zm160-280 100-60 100 60v-280H440v280Z"
-              ></path></svg
-            >
+            Influence
           </h1>
-          <p class="mb-4 uppercase font-sans tracking-wide">
-            2019 &mdash; Coffee Table Book
+          <p class="pb-4">
+            <span class="text-red-500 text-sm border rounded-full px-2"
+              >Print</span
+            >
+            <span class="text-sm border rounded-full px-2">2019</span>
           </p>
           <p class="mb-4">
             <span class="block"
@@ -56,15 +49,17 @@ import spread from "../images/influence/spread1.jpg";
             <li>School Project</li>
           </ul>
           <p class="mb-4">
-            Highlights: Film stills, personal reflections, and cinematic
-            inspiration.
+            Focus Areas: Editorial design, photography curation, and personal
+            narrative through visual storytelling.
           </p>
         </div>
       </div>
     </div>
-    {/* Image Gallery Section */}
-    <section class="mb-4">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+    <div class="my-8 border-b"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="space-y-4">
         <Picture
           src={spread}
           alt="Influence spread"
@@ -74,7 +69,8 @@ import spread from "../images/influence/spread1.jpg";
           height="600"
           layout="constrained"
         />
+        <p class="text-sm">Sample spread showing film still and reflection</p>
       </div>
-    </section>
+    </div>
   </div>
 </Layout>

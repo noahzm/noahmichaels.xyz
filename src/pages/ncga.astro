@@ -1,0 +1,68 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Picture } from "astro:assets";
+import ncga from "../images/ncga.jpg";
+---
+
+<Layout
+  title="NCGA – Noah Michaels"
+  description="In-house designer and printing specialist at the North Carolina General Assembly, overseeing print production and creating promotional materials."
+>
+  <div class="md:p-4 px-4 pb-8 md:max-w-7/10 mr-auto">
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="md:basis-3/7">
+        <Picture
+          src={ncga}
+          alt="NCGA promotional design"
+          class="aspect-[4/3] object-cover border border-black"
+          loading="eager"
+          width="800"
+          height="600"
+          layout="constrained"
+        />
+      </div>
+      <div class="md:basis-4/7 flex flex-col justify-between">
+        <div>
+          <h1
+            class="text-4xl font-sans font-extralight mb-2 flex justify-between w-full"
+          >
+            NCGA
+          </h1>
+          <p class="pb-4">
+            <span class="text-green-500 text-sm border rounded-full px-2"
+              >Current Role</span
+            >
+            <span class="text-sm border rounded-full px-2"
+              >2021&ndash;Present</span
+            >
+          </p>
+          <p class="mb-4">
+            <span class="block mb-4"
+              >Since January 2021, serving as an in-house designer and printing
+              specialist at the North Carolina General Assembly, overseeing
+              print production and creating promotional materials to support the
+              institution's public outreach and internal communications. Work
+              includes managing print operations, producing materials for career
+              fairs, informational booklets for committees, and visitor
+              materials.</span
+            >
+          </p>
+          <ul class="list-disc pl-5 mb-4">
+            <li>Role: In-House Designer & Print Specialist</li>
+            <li>Medium: Print (banners, flyers, tablecloths)</li>
+            <li>Organization: North Carolina General Assembly</li>
+          </ul>
+          <p class="mb-4">
+            Focus Areas: Accessible design for public communication, supporting
+            statewide legislative operations, and collaborating with various
+            divisions and committees within the General Assembly.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-12 text-sm text-gray-600 text-center">
+      Please contact me for project photos and files.
+    </div>
+  </div>
+</Layout>

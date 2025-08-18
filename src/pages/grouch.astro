@@ -28,22 +28,15 @@ import model from "../images/grouch/model.jpg";
       <div class="md:basis-4/7 flex flex-col justify-between">
         <div>
           <h1
-            class="text-2xl font-sans font-normal mb-2 flex justify-between w-full"
+            class="text-4xl font-sans font-extralight mb-2 flex justify-between w-full"
           >
-            <span>Grouch</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="40px"
-              viewBox="0 -960 960 960"
-              width="40px"
-              fill="000"
-              ><path
-                d="m246.67-553.33-89 49.66L50-690.33 308-840h88.67v39.33q0 36.34 23.83 60.17t60.17 23.83q36.33 0 59.83-23.83t23.5-60.17V-840h88.67l258 149.67-110 188.66-89.34-52.66V-120H246.67v-433.33Z"
-              ></path></svg
-            >
+            Grouch
           </h1>
-          <p class="mb-4 uppercase font-sans tracking-wide">
-            2022 &mdash; Apparel
+          <p class="pb-4">
+            <span class="text-blue-500 text-sm border rounded-full px-2"
+              >Apparel</span
+            >
+            <span class="text-sm border rounded-full px-2">2022</span>
           </p>
           <p class="mb-4">
             <span class="block"
@@ -62,15 +55,17 @@ import model from "../images/grouch/model.jpg";
             <li>Personal Project</li>
           </ul>
           <p class="mb-4">
-            Highlights: Hands-on screen printing, original graphics, and small
-            batch production.
+            Focus Areas: Screen printing production, graphic design for apparel,
+            and small-batch manufacturing processes.
           </p>
         </div>
       </div>
     </div>
-    {/* Image Gallery Section */}
-    <section class="mb-4">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+    <div class="my-8 border-b"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="space-y-4">
         <Picture
           src={stickers}
           alt="Grouch stickers"
@@ -80,6 +75,10 @@ import model from "../images/grouch/model.jpg";
           height="600"
           layout="constrained"
         />
+        <p class="text-sm">Branded stickers</p>
+      </div>
+
+      <div class="space-y-4">
         <Picture
           src={press}
           alt="Screen printing press"
@@ -89,6 +88,10 @@ import model from "../images/grouch/model.jpg";
           height="600"
           layout="constrained"
         />
+        <p class="text-sm">Screen printing process and production</p>
+      </div>
+
+      <div class="space-y-4">
         <Picture
           src={hat}
           alt="Grouch hat"
@@ -98,6 +101,10 @@ import model from "../images/grouch/model.jpg";
           height="600"
           layout="constrained"
         />
+        <p class="text-sm">Embroidered hat design</p>
+      </div>
+
+      <div class="space-y-4">
         <Picture
           src={model}
           alt="Grouch on model"
@@ -107,7 +114,8 @@ import model from "../images/grouch/model.jpg";
           height="600"
           layout="constrained"
         />
+        <p class="text-sm">Final product photography</p>
       </div>
-    </section>
+    </div>
   </div>
 </Layout>

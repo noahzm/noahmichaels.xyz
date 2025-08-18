@@ -6,13 +6,47 @@ import { Picture } from "astro:assets";
 import phasezero from "../images/phase-zero.webp";
 import influence from "../images/influence.jpg";
 import grouch from "../images/grouch.jpg";
+import ncga from "../images/ncga.jpg";
 ---
 
 <Layout
   title="Noah Michaels – Portfolio"
-  description="Portfolio homepage of Noah Michaels, a designer and developer based in Raleigh, NC. Featuring selected projects and creative work."
+  description="Portfolio of Noah Michaels, a print specialist and designer based in Raleigh, NC, working in print production, graphic design, and web development."
 >
   <div class="md:p-4 px-4 pb-4 md:max-w-7/10">
+    {/** NCGA (2021-Present) **/}
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="md:basis-5/7">
+        <Picture
+          src={ncga}
+          alt="NCGA"
+          class="aspect-[4/3] object-cover border border-black"
+          loading="eager"
+          width="800"
+          height="600"
+          layout="constrained"
+        />
+      </div>
+      <div class="md:basis-2/7 flex flex-col justify-between">
+        <div class="flex flex-col justify-end items-end w-full">
+          <a
+            href="/ncga"
+            class="text-4xl pb-4 font-sans hover:underline font-extralight"
+            >NCGA</a
+          >
+          <p>
+            <span class="text-green-500 text-sm border rounded-full px-2"
+              >Current Role</span
+            >
+            <span class="text-sm border rounded-full px-2"
+              >2021&ndash;Present</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-4 border-b"></div>
     {/** Phase Zero Section (2025) **/}
     <div class="flex flex-col md:flex-row gap-4">
       <div class="md:basis-5/7">
@@ -52,7 +86,6 @@ import grouch from "../images/grouch.jpg";
           src={grouch}
           alt="Grouch"
           class="aspect-[4/3] object-cover border border-black"
-          loading="eager"
           width="800"
           height="600"
           layout="constrained"
