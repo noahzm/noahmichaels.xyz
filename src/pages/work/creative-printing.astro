@@ -1,0 +1,96 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import img1 from "../../assets/images/creative-printing-website.jpg";
+---
+
+<Layout
+  title="Creative Printing — Noah Michaels"
+  description="Website redesign for a local print shop — clearer services, accessible typography, and improved conversion."
+>
+  <main>
+    <div class="row mb-4">
+      <div class="col-lg-8">
+        <h1 class="display-4 mb-4">Creative Printing — Website Redesign</h1>
+        <p class="lead text-body-secondary">
+          A modern refresh of a local print shop's web presence, focusing on
+          service clarity and customer engagement.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+      <div class="col-lg-8">
+        <Image
+          src={img1}
+          width={1200}
+          height={900}
+          alt="Website redesign — hero layout"
+          class="img-fluid rounded"
+          loading="eager"
+        />
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-lg-8">
+        <h2 class="h4 mb-4">Project Overview</h2>
+        <p>
+          The project modernized the Creative Printing website to better
+          showcase services, streamline ordering, and present clear
+          calls-to-action for customers. Emphasis was placed on accessible
+          typography, simplified service pages, and a clearer contact and
+          ordering flow.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <div class="bg-body-tertiary p-4 rounded">
+          <h3 class="h5">Project Details</h3>
+          <dl class="row">
+            <dt class="col-4 text-body-secondary">Type</dt>
+            <dd class="col-8">Web Design</dd>
+            <dt class="col-4 text-body-secondary">Client</dt>
+            <dd class="col-8">Local Print Shop</dd>
+            <dt class="col-4 text-body-secondary">Scope</dt>
+            <dd class="col-8">Website Redesign</dd>
+            <dt class="col-4 text-body-secondary">Year</dt>
+            <dd class="col-8">2020</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="h4 mb-4">Design Process</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h3 class="h5">1. Research</h3>
+            <p>
+              Audit of existing site, competitor analysis, and stakeholder
+              interviews to align on goals and priorities.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="h5">2. Structure</h3>
+            <p>
+              Developed information architecture and wireframes to simplify the
+              ordering flow and highlight key services.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="h5">3. Visuals & Build</h3>
+            <p>
+              Crafted visual language and worked with developers to implement a
+              responsive, accessible site that improved conversions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-start">
+      <a href="/" class="btn btn-outline-dark">← Back to Work</a>
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,94 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import img1 from "../../assets/images/mandolin-farm-insta.jpg";
+---
+
+<Layout
+  title="Mandolin Farm Icons — Noah Michaels"
+  description="Social media icon system for Mandolin Farm — simplified marks optimized for clarity at small sizes."
+>
+  <main>
+    <div class="row mb-4">
+      <div class="col-lg-8">
+        <h1 class="display-4 mb-4">Mandolin Farm — Social Icons</h1>
+        <p class="lead text-body-secondary">
+          A cohesive set of social media icons designed to strengthen brand
+          recognition and engagement for a local farm’s online presence.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+      <div class="col-lg-8">
+        <Image
+          src={img1}
+          width={1200}
+          height={900}
+          alt="Social icon set — primary"
+          class="img-fluid rounded"
+          loading="eager"
+        />
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-lg-8">
+        <h2 class="h4 mb-4">Project Overview</h2>
+        <p>
+          Created a suite of icons optimized for social profiles and post
+          graphics. The set includes simplified marks, color variants, and
+          size-specific exports to ensure strong legibility across platforms.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <div class="bg-body-tertiary p-4 rounded">
+          <h3 class="h5">Project Details</h3>
+          <dl class="row">
+            <dt class="col-4 text-body-secondary">Type</dt>
+            <dd class="col-8">Iconography</dd>
+            <dt class="col-4 text-body-secondary">Client</dt>
+            <dd class="col-8">Mandolin Farm</dd>
+            <dt class="col-4 text-body-secondary">Scope</dt>
+            <dd class="col-8">Social Assets</dd>
+            <dt class="col-4 text-body-secondary">Year</dt>
+            <dd class="col-8">2024</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="h4 mb-4">Design Process</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h3 class="h5">1. Concept</h3>
+            <p>
+              Explored visual motifs that reflect the farm’s heritage and values
+              while keeping the marks simple for small-scale use.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="h5">2. Iterate</h3>
+            <p>
+              Tested variants across social templates and refined for contrast
+              and recognition at small sizes.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="h5">3. Export</h3>
+            <p>
+              Delivered platform-ready assets with guidance on placement, color
+              usage, and minimum sizes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-start">
+      <a href="/" class="btn btn-outline-dark">← Back to Work</a>
+    </div>
+  </main>
+</Layout>

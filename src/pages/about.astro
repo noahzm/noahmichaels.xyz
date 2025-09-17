@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import portrait from "../assets/images/pfp.jpg";
+---
+
+<Layout
+  title="About — Noah Michaels"
+  description="About Noah Michaels — graphic designer in Raleigh, NC with a background in cross‑media production."
+>
+  <section
+    aria-labelledby="about-heading"
+    class="row justify-content-center align-items-center"
+  >
+    <div class="col-lg-4 col-md-6 text-center mb-4 mb-md-0">
+      <Image
+        src={portrait}
+        width={300}
+        height={300}
+        alt="Noah’s portrait"
+        loading="eager"
+        class="img-fluid rounded-circle shadow"
+      />
+    </div>
+    <div class="col-lg-6 col-md-6">
+      <h1 id="about-heading" class="display-4">Hi, I’m Noah</h1>
+      <p class="lead text-secondary">
+        I am a graphic designer based in Raleigh, NC.
+      </p>
+      <p>
+        As a graduate of Appalachian State University’s Graphic Arts and Imaging
+        Technology program, my focus on cross-media production provides a
+        versatile foundation for every project I take on.
+      </p>
+      <p>
+        Outside of design, I’m usually exploring local trails on my bike or
+        searching for the perfect cup of coffee.
+      </p>
+    </div>
+  </section>
+</Layout>
