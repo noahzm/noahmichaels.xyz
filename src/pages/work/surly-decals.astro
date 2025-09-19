@@ -1,113 +1,70 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import { Image } from "astro:assets";
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import surlyDecal from "../../assets/images/surly-decal.png";
 import surlyDecal2 from "../../assets/images/surly-decal-2.png";
+import { Image } from "astro:assets";
 ---
 
-<Layout
+<ProjectLayout
   title="Surly Bicycle Decals — Noah Michaels"
   description="Custom vinyl decal set for Surly bikes — playful caterpillar illustration and brand‑forward details by Noah Michaels."
+  projectTitle="Surly Decals"
+  projectSubtitle="Custom decal designs for the adventure cycling community"
+  heroImage={surlyDecal}
+  heroAlt="Surly Decal Design"
+  projectType="Product Design"
+  client="Surly Bikes"
+  scope="Vinyl Decals"
+  year="2025"
 >
-  <main>
-    {/* Project Header */}
-    <div class="row mb-4">
-      <div class="col-lg-8">
-        <h1 class="display-4 mb-4">Surly Decals</h1>
-        <p class="lead text-body-secondary">
-          Custom decal designs for the adventure cycling community
-        </p>
-      </div>
-    </div>
-
-    {/* Project Gallery */}
-    <div class="row g-4 mb-4">
-      <div class="col-lg-6">
-        <Image
-          src={surlyDecal}
+  <div class="space-y-8">
+    <div>
+      <h2 class="text-3xl font-light mb-6 text-gray-900">Project Overview</h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-8">
+        A custom decal set designed for the passionate Surly community. The
+        design features a playful caterpillar with the Surly name cleverly
+        integrated into its body, merging a touch of whimsy with the brand's
+        rugged aesthetic.
+      </p>
+      
+      <div class="rounded-xl overflow-hidden shadow-lg group">
+        <Image 
+          src={surlyDecal2} 
           width={1200}
           height={900}
-          alt="Surly Decal Design"
-          class="img-fluid rounded"
-          loading="eager"
-        />
-      </div>
-      <div class="col-lg-6">
-        <Image
-          src={surlyDecal2}
-          width={1200}
-          height={900}
-          alt="Surly Decal on Bicycle"
-          class="img-fluid rounded"
-          loading="eager"
+          alt="Surly Decal on Bicycle" 
+          class="w-full h-auto transition-transform duration-300 group-hover:scale-105"
         />
       </div>
     </div>
 
-    {/* Project Details */}
-    <div class="row mb-5">
-      <div class="col-lg-8">
-        <h2 class="h4 mb-4">Project Overview</h2>
-        <p>
-          A custom decal set designed for the passionate Surly community. The
-          design features a playful caterpillar with the Surly name cleverly
-          integrated into its body, merging a touch of whimsy with the brand's
-          rugged aesthetic. The result offers riders a unique way to personalize
-          their bikes.
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <div class="bg-body-tertiary p-4 rounded">
-          <h3 class="h5">Project Details</h3>
-          <dl class="row">
-            <dt class="col-4 text-body-secondary">Type</dt>
-            <dd class="col-8">Graphic Design & Illustration</dd>
-            <dt class="col-4 text-body-secondary">Client</dt>
-            <dd class="col-8">The Surly Xbiking Community</dd>
-            <dt class="col-4 text-body-secondary">Scope</dt>
-            <dd class="col-8">Custom Vinyl Decal Set</dd>
-            <dt class="col-4 text-body-secondary">Year</dt>
-            <dd class="col-8">2025</dd>
-          </dl>
+    <div>
+      <h2 class="text-3xl font-light mb-6 text-gray-900">Design Process</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="space-y-3">
+          <h3 class="text-xl font-medium text-gray-900">1. Research</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Analyzed Surly's brand ethos and design language to establish a
+            direction that was both authentic and fresh.
+          </p>
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-xl font-medium text-gray-900">2. Design</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Developed playful vector illustrations with bold, rugged lines,
+            crafting a visual style that connects with the brand's cult
+            following of adventurers and tinkerers.
+          </p>
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-xl font-medium text-gray-900">3. Production</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Managed the production process using high-quality vinyl, ensuring
+            precise cuts, deep blacks and crisp whites, and a durable,
+            easy-to-apply final product.
+          </p>
         </div>
       </div>
     </div>
-
-    {/* Process Section */}
-    <div class="row mb-5">
-      <div class="col-12">
-        <h2 class="h4 mb-4">Design Process</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <h3 class="h5">1. Research</h3>
-            <p>
-              Analyzed Surly’s brand ethos and design language to establish a
-              direction that was both authentic and fresh.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <h3 class="h5">2. Design</h3>
-            <p>
-              Developed playful vector illustrations with bold, rugged lines,
-              crafting a visual style that connects with the brand's cult
-              following of adventurers and tinkerers.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <h3 class="h5">3. Production</h3>
-            <p>
-              Managed the production process using high-quality vinyl, ensuring
-              precise cuts, deep blacks and crisp whites, and a durable,
-              easy-to-apply final product.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {/* Navigation */}
-    <div class="d-flex justify-content-start">
-      <a href="/" class="btn btn-outline-dark">← Back to Work</a>
-    </div>
-  </main>
-</Layout>
+  </div>
+</ProjectLayout>

@@ -1,1 +1,1 @@
-My portfolio site. Made with Astro and Bootstrap.
+My portfolio site. Made with Astro, Tailwind CSS, and Flowbite.

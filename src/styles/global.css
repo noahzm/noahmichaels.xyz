@@ -1,0 +1,25 @@
+@import "@fontsource-variable/national-park";
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+
+@plugin "flowbite/plugin";
+
+@theme {
+  --font-sans: "National Park Variable", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Portfolio hover overlay */
+@layer components {
+  .portfolio-item {
+    @apply relative overflow-hidden rounded-lg;
+  }
+
+  .portfolio-overlay {
+    @apply absolute inset-0 flex items-center justify-center bg-white/90 opacity-0 transition-opacity duration-300 ease-in-out;
+  }
+
+  .portfolio-item:hover .portfolio-overlay {
+    @apply opacity-100;
+  }
+}

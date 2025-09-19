@@ -1,97 +1,57 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import { Image } from "astro:assets";
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import img1 from "../../assets/images/vet-card-mockup.jpg";
 ---
 
-<Layout
+<ProjectLayout
   title="Veterinary Mailers — Noah Michaels"
   description="Friendly reminder mailer cards for veterinary clinics — clear messaging and durable print design."
+  projectTitle="Veterinary Reminder Mailers"
+  projectSubtitle="A series of friendly, engaging reminder cards designed to help veterinary clinics maintain patient schedules and improve appointment attendance."
+  heroImage={img1}
+  heroAlt="Reminder mailer card front"
+  projectType="Print Design"
+  client="Veterinary Clinics"
+  scope="Direct Mail"
+  year="2021"
 >
-  <main>
-    <div class="row mb-4">
-      <div class="col-lg-8">
-        <h1 class="display-4 mb-4">Veterinary Reminder Mailer Cards</h1>
-        <p class="lead text-body-secondary">
-          A series of friendly, engaging reminder cards designed to help
-          veterinary clinics maintain patient schedules and improve appointment
-          attendance.
-        </p>
-      </div>
+  <div class="space-y-8">
+    <div>
+      <h2 class="text-3xl font-light mb-6 text-gray-900">Project Overview</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        Designed a compact mailer system to remind clients of upcoming
+        appointments, vaccinations, and routine care. The cards prioritize
+        clarity, friendlier copy, and include detachable appointment notes to
+        increase recall and attendance.
+      </p>
     </div>
 
-    <div class="row g-4 mb-4">
-      <div class="col-lg-8">
-        <Image
-          src={img1}
-          width={1200}
-          height={900}
-          alt="Reminder mailer card front"
-          class="img-fluid rounded"
-          loading="eager"
-        />
-      </div>
-    </div>
-
-    <div class="row mb-5">
-      <div class="col-lg-8">
-        <h2 class="h4 mb-4">Project Overview</h2>
-        <p>
-          Designed a compact mailer system to remind clients of upcoming
-          appointments, vaccinations, and routine care. The cards prioritize
-          clarity, friendlier copy, and include detachable appointment notes to
-          increase recall and attendance.
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <div class="bg-body-tertiary p-4 rounded">
-          <h3 class="h5">Project Details</h3>
-          <dl class="row">
-            <dt class="col-4 text-body-secondary">Type</dt>
-            <dd class="col-8">Print Design</dd>
-            <dt class="col-4 text-body-secondary">Client</dt>
-            <dd class="col-8">School Project</dd>
-            <dt class="col-4 text-body-secondary">Scope</dt>
-            <dd class="col-8">Mailer Cards</dd>
-            <dt class="col-4 text-body-secondary">Year</dt>
-            <dd class="col-8">2019</dd>
-          </dl>
+    <div>
+      <h2 class="text-3xl font-light mb-6 text-gray-900">Design Process</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="space-y-3">
+          <h3 class="text-xl font-medium text-gray-900">1. Research</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Researched common veterinary clinic branding and client
+            communication methods to identify opportunities for a friendlier,
+            more effective reminder system.
+          </p>
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-xl font-medium text-gray-900">2. Design</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Iterated on standard postcard sizes and messaging to create a
+            design that was both eye-catching in the mail and easy to read.
+          </p>
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-xl font-medium text-gray-900">3. Print</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Selected durable stocks and finishes to ensure legibility and
+            longevity in busy clinic environments.
+          </p>
         </div>
       </div>
     </div>
-
-    <div class="row mb-5">
-      <div class="col-12">
-        <h2 class="h4 mb-4">Design Process</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <h3 class="h5">1. Research</h3>
-            <p>
-              Researched common veterinary clinic branding and client
-              communication methods to identify opportunities for a friendlier,
-              more effective reminder system.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <h3 class="h5">2. Design</h3>
-            <p>
-              Iterated on standard postcard sizes and messaging to create a
-              design that was both eye-catching in the mail and easy to read.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <h3 class="h5">3. Print</h3>
-            <p>
-              Selected durable stocks and finishes to ensure legibility and
-              longevity in busy clinic environments.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="d-flex justify-content-start">
-      <a href="/" class="btn btn-outline-dark">← Back to Work</a>
-    </div>
-  </main>
-</Layout>
+  </div>
+</ProjectLayout>

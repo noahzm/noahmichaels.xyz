@@ -10,32 +10,42 @@ import portrait from "../assets/images/pfp.jpg";
 >
   <section
     aria-labelledby="about-heading"
-    class="row justify-content-center align-items-center"
+    class="min-h-[80vh] flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 px-4 py-16"
   >
-    <div class="col-lg-4 col-md-6 text-center mb-4 mb-md-0">
-      <Image
-        src={portrait}
-        width={300}
-        height={300}
-        alt="Noah’s portrait"
-        loading="eager"
-        class="img-fluid rounded-circle shadow"
-      />
+    <div class="lg:w-2/5 order-2 lg:order-1">
+      <div class="space-y-6">
+        <h1 id="about-heading" class="text-5xl lg:text-6xl font-light tracking-tight text-gray-900 leading-[1.1]">
+          Hi, I'm Noah
+        </h1>
+        <div class="w-16 h-1 bg-green-700 rounded-full"></div>
+        <p class="text-2xl lg:text-3xl font-light text-gray-700 leading-relaxed">
+          I am a graphic designer based in Raleigh, NC.
+        </p>
+        <div class="space-y-4 text-lg text-gray-600 leading-relaxed">
+          <p>
+            As a graduate of Appalachian State University's Graphic Arts and Imaging
+            Technology program, my focus on cross-media production provides a
+            versatile foundation for every project I take on.
+          </p>
+          <p>
+            Outside of design, I'm usually exploring local trails on my bike or
+            searching for the perfect cup of coffee.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="col-lg-6 col-md-6">
-      <h1 id="about-heading" class="display-4">Hi, I’m Noah</h1>
-      <p class="lead text-secondary">
-        I am a graphic designer based in Raleigh, NC.
-      </p>
-      <p>
-        As a graduate of Appalachian State University’s Graphic Arts and Imaging
-        Technology program, my focus on cross-media production provides a
-        versatile foundation for every project I take on.
-      </p>
-      <p>
-        Outside of design, I’m usually exploring local trails on my bike or
-        searching for the perfect cup of coffee.
-      </p>
+    <div class="lg:w-2/5 order-1 lg:order-2">
+      <div class="relative">
+        <div class="absolute -inset-4 bg-green-700 rounded-2xl blur-xl opacity-20"></div>
+        <Image
+          src={portrait}
+          width={400}
+          height={400}
+          alt="Noah's portrait"
+          loading="eager"
+          class="relative w-full max-w-md aspect-square object-cover rounded-2xl shadow-2xl mx-auto"
+        />
+      </div>
     </div>
   </section>
 </Layout>
