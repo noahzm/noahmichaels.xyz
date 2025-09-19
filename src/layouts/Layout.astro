@@ -1,7 +1,6 @@
 ---
-import ClientRouter from "astro/components/ClientRouter.astro";
+import { ClientRouter } from "astro:transitions";
 import "../styles/global.css";
-import { ViewTransitions } from "astro:transitions";
 const {
   title = "Noah Michaels",
   description = "Graphic designer in Raleigh, NC — portfolio and selected work by Noah Michaels.",
@@ -92,10 +91,11 @@ const { pathname } = Astro.url;
     <div class="my-6"><slot /></div>
     <script
       is:inline
+      data-astro-rerun
       src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"
     ></script>
     <script is:inline>
-      // Re-initialize Flowbite after view transitions
+      // Re-initialize Flowbite after client-side navigation
       document.addEventListener("astro:page-load", () => {
         if (window.initFlowbite) {
           window.initFlowbite();
