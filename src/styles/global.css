@@ -33,7 +33,7 @@
   }
 
   .portfolio-overlay {
-    @apply absolute inset-0 flex items-center justify-center bg-white/90 opacity-0 transition-opacity duration-300 ease-in-out;
+    @apply absolute inset-0 flex items-center justify-center bg-white/90 opacity-0 transition-opacity duration-300 ease-in-out text-center px-4;
   }
 
   .portfolio-item:hover .portfolio-overlay {
