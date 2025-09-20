@@ -15,17 +15,17 @@ export interface Props {
   year: string;
 }
 
-const { 
-  title, 
-  description, 
-  projectTitle, 
-  projectSubtitle, 
-  heroImage, 
+const {
+  title,
+  description,
+  projectTitle,
+  projectSubtitle,
+  heroImage,
   heroAlt,
   projectType,
   client,
   scope,
-  year
+  year,
 } = Astro.props;
 ---
 
@@ -34,19 +34,26 @@ const {
     <!-- Hero Section -->
     <section class="mb-16">
       <div class="mb-8">
-        <h1 class="text-5xl lg:text-6xl font-light leading-tight mb-6 text-gray-900">
+        <h1
+          class="text-5xl lg:text-6xl font-light leading-tight mb-6 text-gray-900"
+        >
           {projectTitle}
         </h1>
         <div class="w-20 h-1 bg-green-700 rounded-full mb-8"></div>
-        <p class="text-2xl lg:text-3xl font-light text-gray-700 leading-relaxed max-w-4xl">
+        <p
+          class="text-2xl lg:text-3xl font-light text-gray-700 leading-relaxed max-w-4xl"
+        >
           {projectSubtitle}
         </p>
       </div>
-      
+
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
         <div class="lg:col-span-3">
           <div class="relative group">
-            <div class="absolute -inset-2 bg-green-700 rounded-xl blur-sm opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            <div
+              class="absolute -inset-2 bg-green-700 rounded-xl blur-sm opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+            >
+            </div>
             <Image
               src={heroImage}
               width={1200}
@@ -57,10 +64,12 @@ const {
             />
           </div>
         </div>
-        
+
         <div class="lg:col-span-1">
           <div class="bg-white border border-gray-100 rounded-xl p-8 shadow-sm">
-            <h2 class="text-xl font-semibold mb-6 text-gray-900">Project Details</h2>
+            <h2 class="text-xl font-semibold mb-6 text-gray-900">
+              Project Details
+            </h2>
             <dl class="space-y-4">
               <div>
                 <dt class="text-sm font-medium text-gray-500 mb-1">Type</dt>
@@ -95,12 +104,21 @@ const {
 
     <!-- Navigation -->
     <section class="border-t border-gray-100 pt-8">
-      <a 
-        href="/" 
+      <a
+        href="/"
         class="inline-flex items-center gap-3 text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg px-6 py-3 transition-all duration-200 hover:shadow-lg focus:outline-none group"
       >
-        <svg class="w-4 h-4 transition-transform duration-200 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+        <svg
+          class="w-4 h-4 transition-transform duration-200 group-hover:-translate-x-1"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
         </svg>
         Back to Work
       </a>
